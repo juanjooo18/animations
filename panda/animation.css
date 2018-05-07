@@ -1,0 +1,38 @@
+body{
+    background-image:url("http://backgroundcheckall.com/wp-content/uploads/2017/12/cartoon-forest-background-1.png");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+
+#runner{
+    background:url("http://createalittle.com/wp-content/uploads/2014/01/panda_colour.png");
+    width: 250px;
+    height: 330px;
+    animation:walk 1s steps(12) infinite,
+          forward 5s linear infinite;
+          bottom: 0;
+          left: 0;
+          position: absolute;
+          margin-bottom: 200px;
+}
+
+@keyframes walk {
+  0%{
+      background-position: 0px;
+  }
+  100%{
+      background-position: 3000px;
+  }
+}
+
+@keyframes forward {
+  0% {
+      transform: translateX(5vw);
+  }
+
+  100%{
+    transform: translateX(110vw);
+  }
+}
